@@ -40,13 +40,13 @@ namespace CRUD_Escola
 
         public void ConsultarAluno()
         {
-            string sql = $"select * from aluno where matricula = '{this.matricula}';";
+            string sql = $"select * from alunos where matricula = '{this.matricula}';";
             conn.ExecultarConsulta(sql);
         }
 
         public DataTable ListarDados()
         {
-            string sql = "select * from alunos order by nome;";
+            string sql = "select * from alunos order by matricula;";
             return conn.ExecultarConsulta(sql);
         }
 

@@ -19,7 +19,6 @@ namespace CRUD_Escola
 
         Alunos alunos = new Alunos();
 
-        Conexao conexao = new Conexao();
 
         public void ArmazenaDados()
         {
@@ -127,6 +126,8 @@ namespace CRUD_Escola
             rdb_1.Checked = false;
             rdb_2.Checked = false;
             rdb_3.Checked = false;
+            rdb_barroca.Checked = false;
+            rdb_Floresta.Checked = false;
             cmb_Turma.Text = "";
         }
 
